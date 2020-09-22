@@ -1,0 +1,21 @@
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input {
+  margin: .2rem 1em
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+}
+
+.dollar-amounts {
+  list-style: none;
+  margin: .7rem 0; 
+}
