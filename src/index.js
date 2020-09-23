@@ -24,8 +24,7 @@ function getTotals(e) {
   let combinedTotal = 0;
   valuesArr.forEach((val, i) => {
     combinedTotal += inputValsArr[i].value * val;
-  })
-  console.log(combinedTotal);
+  });
   displayTotals(computedTotals);
   totalsAmount.innerText = `Grand total ${combinedTotal}`;
 };
