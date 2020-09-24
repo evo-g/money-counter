@@ -12,7 +12,7 @@ const inputValsArr = [hundred, fifty, twenty, ten, five, one];
 function displayTotals(arr = []) {
   totals.innerHTML =
     arr.map(el => {
-      return `<li class='dollar-amounts'> ${el[0]}'s: ${el[1]}</li>`;
+      return `<li class='dollar-amounts'> ${el[0]}'s: -- $ ${el[1]}</li>`;
     }).join('');
 };
 
@@ -26,7 +26,7 @@ function getTotals(e) {
     combinedTotal += inputValsArr[i].value * val;
   });
   displayTotals(computedTotals);
-  totalsAmount.innerText = `Grand total ${combinedTotal}`;
+  totalsAmount.innerText = `Combined total $${combinedTotal}`;
 };
 
 document.addEventListener('submit', getTotals);

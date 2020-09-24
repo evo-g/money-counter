@@ -13,6 +13,7 @@ body {
   line-height: 1.5;
   width: 100%;
   margin: 0 auto;
+  background-color: #E5FFB3;
 }
 
 .container {
@@ -25,31 +26,56 @@ body {
 }
 
 .child-container {
+  background-color: #DBF8A3;
   display: flex;
   flex-direction: column;
-  border: 1px solid grey;
+  border: 1px solid #006100;
   justify-content: center;
   align-items: center;
   margin: 1rem;
   width: 45vw;
   height: 55vh;
+  border-radius: .2rem;
+  color: #006100;
 }
 
 form {
+  background-color: #DBF8A3;
+  border: 1px solid #006100;
   display: flex;
   flex-direction: column;
-  border: 1px solid grey;
   justify-content: center;
   align-items: center;
   margin: 1rem;
   width: 45vw;
   height: 55vh;
+  color: #006100;
+  border-radius: .2rem;
+  position: relative;
 }
 
 form button {
   margin: 0 0 .5rem;
-
+  background-color: #9DE33D;
+  border: none;
+  padding: .3rem 1.5rem;
+  border-radius: .2rem;
+  color: #006100;
+  font-size: .7rem;
+  cursor: pointer;
 }
+
+form button:hover {
+  background-color: lawngreen;
+  color: #000000;
+}
+
+form button:focus {
+  outline: none;
+  background-color: lawngreen;
+  color: #000000;
+}
+
 .form-child {
   margin: .5rem 0;
   display: flex;
@@ -57,6 +83,15 @@ form button {
   width: 75%;
 }
 
+.form-child input {
+  border: 1px solid #006100;
+}
+
+.form-child input:focus {
+  outline: none;
+  border: 1px solid #BDE66E;
+}
+/* #BDE66E */
 
 .dollar-amounts {
   list-style: none;
@@ -67,12 +102,18 @@ form button {
   .container {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    height: 100vh;
+    min-height: 110vh;
   }
   
+  .child-container {
+    min-width: 275px;
+  }
+
   form {
-    min-width: 225px;
+    min-width: 275px;
+  }
+
+  .form-child {
+    margin-bottom: .5rem;
   }
 }
