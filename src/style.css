@@ -13,7 +13,7 @@ body {
   line-height: 1.5;
   width: 100%;
   margin: 0 auto;
-  background-color: #E5FFB3;
+  background-color: #ffffff;
 }
 
 .container {
@@ -26,7 +26,7 @@ body {
 }
 
 .child-container {
-  background-color: #DBF8A3;
+  background-color: #EDF2EF;
   display: flex;
   flex-direction: column;
   border: 1px solid #006100;
@@ -40,7 +40,7 @@ body {
 }
 
 form {
-  background-color: #DBF8A3;
+  background-color: #EDF2EF;
   border: 1px solid #006100;
   display: flex;
   flex-direction: column;
@@ -54,9 +54,13 @@ form {
   position: relative;
 }
 
+form::after {
+  border-top-style: 5px solid grey;
+}
+
 form button {
   margin: 0 0 .5rem;
-  background-color: #9DE33D;
+  background-color: #6BA;
   border: none;
   padding: .3rem 1.5rem;
   border-radius: .2rem;
@@ -66,14 +70,14 @@ form button {
 }
 
 form button:hover {
-  background-color: lawngreen;
-  color: #000000;
+  background-color: #6BAB90;
+  color: #fff;
 }
 
 form button:focus {
   outline: none;
-  background-color: lawngreen;
-  color: #000000;
+  background-color: #6BAB90;
+  color: #fff;
 }
 
 .form-child {
@@ -89,7 +93,7 @@ form button:focus {
 
 .form-child input:focus {
   outline: none;
-  border: 1px solid #BDE66E;
+  border: 1px solid #E1F0C4;
 }
 /* #BDE66E */
 
