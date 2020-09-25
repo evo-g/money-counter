@@ -14,13 +14,19 @@ body {
   width: 100%;
   margin: 0 auto;
   background-color: #ffffff;
+  height: 100vh;
+}
+
+h1 {
+  margin-bottom: 0.5rem;
+  padding: 0 0 1rem;
+  text-align: center;
 }
 
 .container {
   display: flex;
   flex-direction: row;
   flex: 1;
-  height: 100vh;
   justify-content: center;
   align-items: center;
 }
@@ -103,18 +109,26 @@ form button:focus {
 }
 
 @media screen and (max-width: 700px) {
+  h1 {
+    margin-bottom: 0.5rem;
+    padding: 0 0 1rem;
+    text-align: center;
+  }
+
   .container {
     display: flex;
     flex-direction: column;
-    min-height: 110vh;
+    min-height: 120vh;
   }
   
   .child-container {
     min-width: 275px;
+    min-height: 375px;
   }
 
   form {
     min-width: 275px;
+    min-height: 375px;
   }
 
   .form-child {
