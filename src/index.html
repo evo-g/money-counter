@@ -9,58 +9,69 @@
 </head>
 
 <body>
-  <h1>Track Your Cash</h1>
+  <div class="heading">
+    <h1>Track Your Cash</h1>
+  </div>
   <div class='container'>
     <form>
+      <div class='container-heading'>
+        <button type="reset">🔄</button>
+      </div>
       <div class='form-child'>
-        <label>100's</label>
+        <label>100</label>
         <input
           id='hundred' 
           name='hundred'
           inputmode="numeric"
+          maxlength="15"
         >
       </div>
       <div class='form-child'>
-        <label>50's</label>
+        <label>50</label>
         <input
           id='fifty'
           name='fifty'
           inputmode="numeric"
+          maxlength="15"
         >
       </div>
       <div class='form-child'>
-        <label>20's</label>
+        <label>20</label>
         <input
           id='twenty'
           name='twenty'
           inputmode="numeric"
+          maxlength="15"
         >
       </div>
       <div class='form-child'>
-        <label>10's</label>
+        <label>10</label>
         <input
           id='ten'
           name='ten'
           inputmode="numeric"
+          maxlength="15"
         >
       </div>
       <div class='form-child'>
-        <label>5's</label>
+        <label>5</label>
         <input
           id='five'
           name='five'
           inputmode="numeric"
+          maxlength="15"
         >
       </div>
       <div class='form-child'>
-        <label>1's</label>
+        <label>1</label>
         <input 
           id='one' 
           name='one'
           inputmode="numeric"
+          maxlength="15"
         >
       </div>
-      <div>
+      <div class="button-container">
         <button type='submit'><strong>Submit</strong></button>
       </div>
     </form>
