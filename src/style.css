@@ -41,7 +41,7 @@ h1 {
 }
 
 .child-container {
-  margin: 0 0 0 1rem;
+  margin: 0 0 2rem 1rem;
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -49,12 +49,12 @@ h1 {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 60vh;
+  height: 71.5vh;
   border-radius: .2rem;
 }
 
 form {
-  margin: 0 1rem 0 0;
+  margin: 0 1rem 2rem 0;
   background-color: #ffffff;
   border: 1px solid #262626;
   display: flex;
@@ -62,7 +62,6 @@ form {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 60vh;
   border-radius: .2rem;
   position: relative;
 }
@@ -109,8 +108,8 @@ form::after {
 }
 
 .button-container button {
-  margin: .5rem 0;
   background-color: #6BA;
+  text-align: center;
   border: none;
   padding: .5rem 1.8rem;
   border-radius: .2rem;
@@ -118,17 +117,6 @@ form::after {
   font-size: .7rem;
   cursor: pointer;
 }
-
-.button-container a {
-  text-decoration: none;
-  color: #fff;
-}
-
-.button-container :visited {
-  color: initial;
-  color: #fff;
-}
-
 
 .button-container button:hover {
   background-color: #6BAB90;
@@ -183,7 +171,7 @@ form::after {
   .child-container {
     min-width: 275px;
     min-height: 375px;
-    margin: 1rem 0 0 0;
+    margin: 1rem 0 2rem 0;
   }
 
   form {
