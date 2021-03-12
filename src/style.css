@@ -209,14 +209,14 @@ form::after {
   }
   
   .child-container {
-    min-width: 275px;
-    min-height: 375px;
+    min-width: 17.25rem;
+    min-height: 31rem;
     margin: 1rem 0 2rem 0;
   }
 
   form {
-    min-width: 275px;
-    min-height: 375px;
+    min-width: 17.25rem;
+    min-height: 31rem;
     margin: 0 0 1rem 0;
   }
 
